@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Secrets</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px;
+      font-size: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .album {
+      text-decoration: none;
+      color: white;
+      position: relative;
+      display: block;
+    }
+
+    .album img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h1>MY SECRETS</h1>
+
+<div class="grid">
+
+  <a href="album1.html" class="album">
+    <img src="images/album1/cover.jpg">
+    <div class="title">Trip</div>
+  </a>
+
+  <a href="album2.html" class="album">
+    <img src="images/album2/cover.jpg">
+    <div class="title">Friends</div>
+  </a>
+
+</div>
+
+</body>
+</html>
